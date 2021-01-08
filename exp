@@ -1,0 +1,32 @@
+Sublime Text
+https://www.sublimetext.com/3
+
+패키지를 다운받을 사이트
+https://packagecontrol.io/
+우측 상단의 Installation
+
+<에디터 설정>---------------------------------------------------------------------
+Tools-Install Package Control 하면 외부 패키지 가져올 수 있다 뜸
+Command Palett (Ctrl+Shift+P)
+	Ip 검색, Package Control:Install Package - 제공되는 패키지 리스트 뜸
+	IMESupport 설치 - 한글 엔코딩1
+	ConvertToUTF8 설치 – 한글 엔코딩2
+	
+C\web 폴더에 앞으로 데이터 모아둘 것임
+
+  File – OpenFolder… - C\web 지정
+
+  우측 하단 Plain Text를 HTML로 바꿈
+  
+  Ctrl+Space가 자동완성 기능임
+---------------------------------------------------------------------------------
+
+W3Schools - 현제 사용하고 있는 웹 기술들 API
+https://www.w3schools.com/
+
+
+
+
+
+
+
