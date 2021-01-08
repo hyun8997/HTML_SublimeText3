@@ -82,6 +82,6 @@ html 기본 완성 기능이 위의 내용으로 바꿔서 생성 가능, Tab �
 
 Open In Browser 패키지 설치 ==> 마우스 우클릭에 open in browser 기능 추가됨
 
-
+Emmet 패키지 설치, yes enable telemetry ==> ol>li*5 처럼 생성 기능 생김 (emmet.io)
 
 
