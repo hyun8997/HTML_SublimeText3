@@ -1,0 +1,87 @@
+Sublime Text
+https://www.sublimetext.com/3
+
+패키지를 다운받을 사이트
+https://packagecontrol.io/
+우측 상단의 Installation
+
+<에디터 설정>---------------------------------------------------------------------
+Tools-Install Package Control 하면 외부 패키지 가져올 수 있다 뜸
+Command Palett (Ctrl+Shift+P)
+	Ip 검색, Package Control:Install Package - 제공되는 패키지 리스트 뜸
+	IMESupport 설치 - 한글 엔코딩1
+	ConvertToUTF8 설치 – 한글 엔코딩2
+	
+C\web 폴더에 앞으로 데이터 모아둘 것임
+
+  File – OpenFolder… - C\web 지정
+
+  우측 하단 Plain Text를 HTML로 바꿈
+  
+  Ctrl+Space가 자동완성 기능임
+---------------------------------------------------------------------------------
+
+W3Schools - 현제 사용하고 있는 웹 기술들 API
+https://www.w3schools.com/
+
+---------------------------------------------------------------------------------
+
+	HTML 기본 사항
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>Page Title</title>
+	</head>
+	<body>
+
+	<h1>This is a Heading</h1>
+	<p>This is a paragraph.</p>
+
+	</body>
+	</html>
+
+---------------------------------------------------------------------------------
+에디터에서 html 쓰고 Ctrl+Space 하면 기본 사항 처리 해줌
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+---------------------------------------------------------------------------------
+Snippet작업
+
+Tools - Developer - New Snippet... 내용을 다음과 같이 변경
+<snippet>
+	<content><![CDATA[
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>html</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
+
+C:\Users\(사용자)\AppData\Roaming\Sublime Text 3\Packages에 HTML 폴더 생성, html.sublime-snippet으로 저장
+html 기본 완성 기능이 위의 내용으로 바꿔서 생성 가능, Tab 키로도 동작하도록 됨
+
+---------------------------------------------------------------------------------
+
+
+
+
+
+
