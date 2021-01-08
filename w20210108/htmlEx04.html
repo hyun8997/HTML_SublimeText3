@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>표 만들기</title>
+</head>
+<body>
+	<table border="1" width="800px" height="400px" cellspacing="0" cellpadding="20">
+		<!-- 가장 바깥이 800*400으로 고정되어서 내부 셀이 늘어나면 안에서 땅나눠먹음 -->
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>7</td>
+			<td rowspan="3">8</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td colspan="2" >4</td>
+		</tr>
+		<tr>
+			<td colspan="2" >5</td>
+			<td>6</td>
+		</tr>
+
+
+	</table>
+
+	<br>
+	<hr>
+	<br>
+	<!-- table>tr>td 였는데 더 추가 하긴 함-->
+	<table border="1" width="600px" cellspacing="0" cellpadding="20">
+		<tr bgcolor="yellow">
+			<td rowspan="3">1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr bgcolor="blue">
+			<td colspan="2">4</td>
+		</tr>
+		<tr bgcolor="green">
+			<td>5</td>
+		</tr>
+	</table>
+
+
+
+
+
+</body>
+</html>
