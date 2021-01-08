@@ -1,18 +1,23 @@
 !!NOTE!!
 
 [20210108]
+<시작태그 속성=값 속성=값 >
+
 <!-- html 주석 -->  ==> 단축키는 Ctrl + Shift + /
 <br /> : 개행
+<hr> : 선 쭉~ 그어줌 --------------처럼
 &nbsp; : 띄어쓰기
 <p></p> : 문단 구분
 
 <ul> : unordered list, 점 붙은 목록으로 출력
 <ol> : ordered list, 번호 붙어서 출력
   <li> : list, 목록 내용
-    <a href=""></a> : anchor, a만 치고도 자동완성 가능, "<시작태그 속성=값 속성=값 >" 형태
+    <a></a> : anchor, href-주소, target-주소 이동 방식
+<img> : 이미지 출력, alt-그림이 동작 안하면 설명으로 대체(권장), width,height(width만 맞추면 비율 맞춰서 height도 조절됨), name-식별할 수 있도록 붙이는것
 
-
-
+<table> : 테이블, border-줄 표시, width,height, cellspacing-셀간 간격 조절, cellpadding-셀 내 조금 띄어서 쓰기
+  <tr> : 테이블 행, bgcolor-배경색
+    <td> : 테이블 렬, colspan-컬럼끼리 합치기, rowspan-로우끼리 합치기, 합치는 기능들은 밀어내면서 합침을 알아야 함
 
 
 
@@ -24,4 +29,10 @@
 #w20210108
 test.html		      테스트용 html 파일
 htmlEx01.html		  html 설명
-htmlEx02.html		  다른 페이지로 이동
+htmlEx02.html		  다른 url로 이동
+htmlEx03.html		  페이지 내에서 안의 컨텐츠로 이동, 패키지 추가 한 후 ol>li*5 같이 여러개 생성 가능 
+htmlEx04.html     표 만들기
+
+
+
+
