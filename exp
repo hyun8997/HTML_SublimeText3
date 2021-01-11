@@ -15,9 +15,76 @@
     <a></a> : anchor, href-주소, target-주소 이동 방식
 <img> : 이미지 출력, alt-그림이 동작 안하면 설명으로 대체(권장), width,height(width만 맞추면 비율 맞춰서 height도 조절됨), name-식별할 수 있도록 붙이는것
 
-<table> : 테이블, border-줄 표시, width,height, cellspacing-셀간 간격 조절, cellpadding-셀 내 조금 띄어서 쓰기
+<table> : 테이블, border-줄 표시, width,height, cellspacing-셀간 간격 조절, cellpadding-셀 내 조금 띄어서 쓰기, align-center중앙정렬 가능
   <tr> : 테이블 행, bgcolor-배경색
     <td> : 테이블 렬, colspan-컬럼끼리 합치기, rowspan-로우끼리 합치기, 합치는 기능들은 밀어내면서 합침을 알아야 함
+
+
+[20210111]
+<th> : 굵게 표시
+table>tr>th+td ==> +는 형제
+<input> : 받아들이는 것, type-무슨 형식인지(text, button, reset-리셋 기능, submit-제출, hidden-id,name,value등 감출때), name-식별용
+<form> : 사용자가 입력한 것 감싸고 있다가 전달, 이 안에서 reset, submit 동작
+	form : 제출하는 기능
+
+	form method = "get" => 전달할 때 get 방식(255자 까지만 가능)으로 전달
+						=>웹브라우저 주소창에 내용을 넣어서 전달
+
+
+	form method = "post"	=> 전달할 때 post 방식으로 전달
+							=> 주소창에 노출 x
+							=> 소스코드 안쪽에 넣어서 전달
+
+	default : get방식
+
+<caption> : 캡션
+<thead bgcolor="#FFFF6C"> : 배경색
+
+
+> CSS (Cascading Style Sheet) : 디자인 관련된 요소를 최대한 tag 속성에서 제외해서 분리해서 사용
+  <style type="text/css"> ==> 따로 디자인 요소 분리
+		/* 선택자 {속성 : 값; 속성 : 값; ...} ==> ;(세미콜론)으로 속성 구분 */
+    
+    table, td{
+			border: 1px solid red;
+		}
+	</style>
+
+    CSS 선택자 <br>
+		1. HTML tag <br>
+		2. id 		------> # <br>        
+		3. class 	------> . <br>
+		4. 전체 		------> * <br>
+
+    /* #아이디명 {} 으로 사용 가능, 중복 조심 */
+    #aaa {
+			color: pink;
+		}
+
+    /*class ==> .클래스명 {}*/
+		.bbb {
+			color: blue;
+		}
+
+    /* * ==> 전체 */
+    * {
+			font-size: 30px;
+
+			font-family: "나눔고딕", Dotim, sans-serif; ==> 순서대로 있는 폰트 찾아서 적용
+		}
+
+<pre> : 내부 텍스트가 코드 그대로 출력되게 되어있다.
+        position 위치제어 -  마진무시 => 절대값으로 구현
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -26,12 +93,50 @@
 
 
 ------------------------------------------------------------------------------------
-#w20210108
+#w20210111
 test.html		      테스트용 html 파일
 htmlEx01.html		  html 설명
 htmlEx02.html		  다른 url로 이동
 htmlEx03.html		  페이지 내에서 안의 컨텐츠로 이동, 패키지 추가 한 후 ol>li*5 같이 여러개 생성 가능 
 htmlEx04.html     표 만들기
+#w20210111
+htmlEx05.html     로그인 기능
+htmlEx06.html     네이버 검색 기능
+htmlEx07.html     가입 기능, 체크박스, 선택박스
+htmlEx08.html     캡션-제목, 중앙 정렬
+CSSEx01.html      CSS(Cascading Style Sheet)
+CSSEx02.html      선택자
+CSSEx03.html      id(단일),class(여러개) 로 지정해서 CSS 디자인 가능
+CSSEx04.html      div
+CSSEx05.html      CSS 상속, em(부모 크기의 배수)
+CSSEx06.html      간단한 로그인 폼
+CSSEx07.html      div 모양 밑 위치 제어
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
