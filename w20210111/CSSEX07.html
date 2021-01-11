@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>div</title>
+	<style type="text/css">
+		#myDiv1 {
+			width: 100px;
+			height: 100px;
+			padding: 50px;
+
+			background-color: lightgreen;
+		}
+
+		#myDiv2 {
+			width: 200px;
+			height: 200px;
+			padding: 50px;
+			background-color: lightblue;
+
+			/*position 위치제어 -  마진무시 => 절대값으로 구현*/
+			position: absolute;
+			left: 208px;
+			top: 8px;
+		}
+
+	</style>
+</head>
+<body>
+<!--myDiv1 : 너비 100, 높이 100, 패딩 50, 배경색 초록
+	myDiv2 : 너비 200, 높이 200, 패딩 50, 배경색 파랑
+ -->
+	<div id="myDiv1">
+		BOX1
+	</div>
+
+	<div id="myDiv2">
+		BOX2
+	</div>
+
+
+</body>
+</html>
