@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>멀티미디어 캡션</title>
+	<style type="text/css">
+		img {
+			width: 250px;
+		}
+
+		figcaption {	<!-- 원래 인라인 요소라서 공간 남으면 그림이랑 같이 일렬되기에 블록으로 해줬음 -->
+			display: block;
+			padding: 5px;
+			font: 14px Dotum;
+			margin-left: 250px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<figure> <!-- 캡션을 달기위한 공간이다 선언 공간 -->
+		<img src="../Images/simbo1.jpg" alt="설거지하는심보">
+		<img src="../Images/simbo2.jpg" alt="안마하는심보">
+		<img src="../Images/simbo3.jpg" alt="상담하는심보">
+		<figcaption>
+			<b>심보는 일을 열심히 해요</b>	<!-- 검색 봇이 여기는 중요한 부분(텍스트 강조)으로 인식 -->
+		</figcaption>
+		
+	</figure>
+	
+
+
+</body>
+</html>
