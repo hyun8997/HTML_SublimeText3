@@ -77,6 +77,79 @@ table>tr>th+td ==> +는 형제
         position 위치제어 -  마진무시 => 절대값으로 구현
 
 
+[20210112]
+	CSS Position 속성에는 5가지 값이 있음
+	Position 속성은 위치를 지정하는 속성이므로 left, right, top, bottom 속성과 같이 사용할 수 있음.
+	당연히 위치를 지정하기 위해 방위와 픽셀값이 필요함.
+
+	- static : position을 지정하지 않았을 때와 같다.
+			 : 기본적으로 위에서 아래로, 왼쪽에서 오른쪽 배치 
+			 : 부모 요소가 있다면 부모 요소의 기준으로 배치
+	- absolute : 문서의 좌측 상단 기준으로 절대 위치를 나타냄. 스크롤을 따라가지 않는다.
+	- relative : static인 태그를 기준으로 위치 지정
+	- fixed : 문서의 좌측 상단 기준으로 요소를 고정. 스크롤과 상관없이 고정.
+	- inherit : 부모 태그의 속성값을 상속 
+
+Block Level Element, Inline Level Elements
+블록 요소 : 한줄을 다 차지하는 요소, div, p, body, h1~6, ol, ul, form, ...
+인라인 요소 : 자신의 컨텐츠를 감쌀 정도 만큼의 크기를 갖는 요소, span, img, a, input, label, ...   img 요소가 inline임에 유의!
+	<style type="text/css">		
+		#span1 {
+			display: block;
+		}
+		p {
+			display: inline;
+		}
+	</style>
+	asdasd:hover -> mouse over effect
+HTML5 + CSS + 자바 스크립트 => 웹 어플리케이션
+
+cf)
+head : 문서에서 단 한번만 사용할 수 있는 태그
+     : <title> 이나 <meta> 정보가 들어가는 부분 
+     : 실제로 웹 화면에 보이지 않는 부분
+     
+<header id="top">	<!-- 머리말 부분 지정 태그 -->
+
+nav : 내비게이션 링크를 표시 
+    : header, aside 태그 안에 포함시킬수도 있고 독립해서 사용할 수 있음
+    => 위치에 영향을 받지 않는다.
+
+section : (제목을 붙여서) 콘텐츠들을 그룹으로 묶어주는 태그
+	: 웹에서 재배포되어서는 안될 콘텐츠를 지정할 때도 사용
+	=> 단순히 콘텐츠를 묶어서 사용하고 싶으면 section tag는 바람직하지 않음
+	=> 재배포 가능한 콘텐츠라면 div 사용 
+
+article : 웹 상의 실제 내용
+ 	: 웹 컨텐츠를 자동으로 겁색하는 로봇이 이 태그를 발견하게 되면 배포 가능한 컨텐츠로 인식
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -94,23 +167,37 @@ table>tr>th+td ==> +는 형제
 
 ------------------------------------------------------------------------------------
 #w20210111
-test.html		      테스트용 html 파일
-htmlEx01.html		  html 설명
-htmlEx02.html		  다른 url로 이동
-htmlEx03.html		  페이지 내에서 안의 컨텐츠로 이동, 패키지 추가 한 후 ol>li*5 같이 여러개 생성 가능 
-htmlEx04.html     표 만들기
+test.html		테스트용 html 파일
+htmlEx01.html		html 설명
+htmlEx02.html		다른 url로 이동
+htmlEx03.html		페이지 내에서 안의 컨텐츠로 이동, 패키지 추가 한 후 ol>li*5 같이 여러개 생성 가능 
+htmlEx04.html     	표 만들기
 #w20210111
-htmlEx05.html     로그인 기능
-htmlEx06.html     네이버 검색 기능
-htmlEx07.html     가입 기능, 체크박스, 선택박스
-htmlEx08.html     캡션-제목, 중앙 정렬
-CSSEx01.html      CSS(Cascading Style Sheet)
-CSSEx02.html      선택자
-CSSEx03.html      id(단일),class(여러개) 로 지정해서 CSS 디자인 가능
-CSSEx04.html      div
-CSSEx05.html      CSS 상속, em(부모 크기의 배수)
-CSSEx06.html      간단한 로그인 폼
-CSSEx07.html      div 모양 밑 위치 제어
+htmlEx05.html     	로그인 기능
+htmlEx06.html     	네이버 검색 기능
+htmlEx07.html     	가입 기능, 체크박스, 선택박스
+htmlEx08.html     	캡션-제목, 중앙 정렬
+CSSEx01.html      	CSS(Cascading Style Sheet)
+CSSEx02.html      	선택자
+CSSEx03.html      	id(단일),class(여러개) 로 지정해서 CSS 디자인 가능
+CSSEx04.html      	div
+CSSEx05.html      	CSS 상속, em(부모 크기의 배수)
+CSSEx06.html      	간단한 로그인 폼
+CSSEx07.html      	div 모양 밑 위치 제어
+#w20210112
+CSSEx09.html      	CSS Position
+CSSEx11.html      	Block Level Element, Inline Level Elements, 블록 요소 : 한줄을 다 차지하는 요소, 인라인 요소 : 자신의 컨텐츠를 감쌀 정도 만큼의 크기를 갖는 요소
+CSSEx12.html      	CSS 효과, 표 예쁘게 만들기, 표에서 어디를 보는지 알 수 있게 해둠
+CSSEx13.html      	CSS 효과2, 사이트 관리자 메뉴 만들기
+*html5		  	html5에 대한 설명
+html5Ex01.html	  	header, nav(네비게이션), section(콘텐츠 그룹), article(배포가능 컨텐츠)
+html5Ex02.html	  	멀티미디어 캡션, 검색 봇을 위한 텍스트 강조
+
+
+
+
+
+
 
 
 
