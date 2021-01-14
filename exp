@@ -128,6 +128,89 @@ article : 웹 상의 실제 내용
 CSS 파일을 따로 분리해서 만들 수 있음 - 분리하여 사용할 것을 권장
 
 
+[20210114]
+div : 전체 바디 내 디자인 작업하기 쉽게 자신의 구역 가지도록
+CSS가 브라우저별로 부분적으로 다르게 구현될 수 있습니다. 
+CSS 프로퍼티 앞에 브라우저를 식별할 수 있는 접두사를 붙여서 사용해야 함.
+-webkit- : 웹킷 방식 브라우저용 (사파리, 크롬, ...)
+-moz-    : 게코방식 브라우저용 (모질라, 파이어폭스,  ...)
+-o-      : 오페라 브라우저
+-ms-     : 마이크로 소프트 인터넷 익스플로러
+
+테두리를 표현할 때 너비와 넓이를 같게 하고 그 값의 절반을 radius로 주면 원을 그릴 수 있음
+width 값을 height 값의 1/2로 지정하고 왼쪽위, 왼쪽아래를 원 처리하면 반원임
+테두리는 왼쪽 위부터 시게방향
+
+    border-image: url(../Images/b-image.jpg) 70;
+    
+	border-image : source || slice || repeat
+	
+	>repeat
+	stretch : 영역을 채울만큼 이미지를 늘림
+	repeat  : 영역을 채울만큼 타일 형식으로 반복
+	round   : 영역을 채울만큼 타일 형식으로 반복, 마지막에 이미지가 잘리지 않도록 온전히 채워줌
+	space   : 영역을 채울만큼 타일 형식으로 반복, 마지막에 이미지가 잘림
+
+
+#resize{
+	width: 200px;
+	height: 100px;
+	padding: 5px;
+	border: 1px solid black;
+	clear: both;	<!-- 올라가지 못하게 막는것 -->
+
+	overflow: hidden;	<!-- 넘어가는애들 가리기 -->
+	/*horizontal, vertical, both, none;*/
+	resize: both;
+}
+
+	box-shadow: 가로, 세로, 번지는 정도, 그림자 색상
+		  : 최소 3가지는 지정해주어야 함;
+	text-shadow 속성은 box-shadow와 동일
+	
+	선명한 느낌의 글자
+	- 짙은 배경 + 더 짙은 글자색
+	- 그림자 흰색이나 밝은 회색 
+	- 영어가 더 유용 
+
+	그라데이션 함수로 제공
+	linear-gradient(각도 또는 위치[~로], 시작, 끝)
+		시작위치 지정 : top - 위에서 시작하여 아래로 바뀜 
+				bottom - 아래에서 시작하여 위로 바뀜
+				left 
+				right 
+			      ---------------------------------------------
+				권장사항(규칙) : to 키워드를 붙일 것
+				ex) top => to bottom (-webkit-없을때만 됨 그냥 linear-gradient만 됨)
+
+	CSS3를 지원하지 않는 브라우저 => 대체할 화면 코드를 작성 (권장)
+					모든 브라우저가 읽을 수 있는 색상
+
+background-size : contain;
+	cover : 이미지 크기 비율을 그대로 유지하면서 이미지가 들어갈 엘리먼트의 
+		가로 또는 세로에 이미지를 맞춤 (큰 값에 맞춤)
+			        
+	contain : 이미지 크기 비율을 그대로 유지 하면서 원하는 영역에 전체 이미지가 들어가도록
+		  가장 작은 크기로 이미지 스케일을 조정
+
+			img 변형효과 : transform
+				- rotate(회전)
+				- scale(확대/축소)
+				- skew(왜곡)
+				- translate(이동)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -196,6 +279,29 @@ CSSEx13.html      	CSS 효과2, 사이트 관리자 메뉴 만들기
 html5Ex01.html	  	header, nav(네비게이션), section(콘텐츠 그룹), article(배포가능 컨텐츠)
 html5Ex02.html	  	멀티미디어 캡션, 검색 봇을 위한 텍스트 강조
 #w20210113
+
+#w20210114
+CSS3Ex.html		border 동그랗게 처리하는 방법(div), CSS 프로퍼티 앞에 브라우저를 식별할 수 있는 접두사를 붙여서 사용
+CSS3Ex01.html		border-radius, 원, 반원, 1/4원
+CSS3Ex02.html		border 속성, 보더 4면 서로 색 다르게, 보더를 이미지로(책자), 
+CSS3Ex03.html		shadow effect, box-shadow
+CSS3Ex04.html		shadow effect2, text-shadow
+CSS3Ex05.html		shadow effect3, text-shadow 여러개 가능
+CSS3Ex06.html		gradient effect, 그라데이션 linear-gradient(각도 또는 위치[~로], 시작, 끝), 
+CSS3Ex07.html		원형 그라데이션 효과
+CSS3Ex08.html		background image, 백그라운드 이미지 조절기능들
+CSS3Ex09.html		투명도 속성
+CSS3Ex10.html		img 조절
+
+
+
+
+
+
+
+
+
+
 
 
 
