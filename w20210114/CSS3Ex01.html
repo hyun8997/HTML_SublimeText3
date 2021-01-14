@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>border-radius</title>
+	<style type="text/css">
+		#radius1{
+			background-color: #ffff33;
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+			/*테두리를 표현할 때 너비와 넓이를 같게 하고 그 값의 절반을 radius로 주면 원을 그릴 수 있음*/
+		}
+
+		#radius2{
+			background-color: white;
+			width: 200px;
+			height: 200px;
+			border: 3px solid #ffff33;
+			border-radius: 100px;
+		}
+
+		#radius3{
+			background-color: #33cc33;
+			width: 100px;
+			height: 200px;
+
+			/*width 값을 height 값의 1/2로 지정하고 왼쪽위, 왼쪽아래를 원 처리하면 반원임
+			테두리는 왼쪽 위부터 시게방향 */
+			border-radius: 100px 0px 0px 100px;
+		}
+
+		#radius4{
+			background-color: #33cc33;
+			width: 200px;
+			height: 100px;
+
+			border-radius: 100px 100px 0px 0px;
+		}
+
+		#radius5{
+			background-color: #33cc33;
+			width: 100px;
+			height: 100px;
+
+			border-radius: 100px 0px 0px 0px;
+		}
+
+		#radius6{
+			background-color: #33cc33;
+			width: 100px;
+			height: 100px;
+
+			border-radius: 0px 0px 0px 100px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="radius1"></div>
+	<br>
+	<div id="radius2"></div>
+	<br>
+	<div id="radius3"></div>
+	<br>
+	<div id="radius4"></div>
+	<br>
+	<div id="radius5"></div>
+	<br>
+	<div id="radius6"></div>
+	<br>
+
+</body>
+</html>

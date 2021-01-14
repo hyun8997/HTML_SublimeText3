@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>img 조절</title>
+	<style type="text/css">
+		img{
+			width: 350px;
+		}
+
+		/*변형효과 : transform
+				- rotate(회전)
+				- scale(확대/축소)
+				- skew(왜곡)
+				- translate(이동)
+		*/
+		#tr1 {
+			transform: rotate(45deg);  /*degree/radian 모두 사용 가능*/
+		}
+
+		#tr2 {
+			width: 100px;
+			transform: scale(2);  /*가로만 확대 scale(2,1)은 가로 세로*/
+		}
+
+		#tr3 {
+			transform: skew(10deg, 10deg);  /*degree/radian 모두 사용 가능*/
+		}
+
+		#tr4 {
+			transform: translate(200px, 200px);   /*좌표*/
+		}
+
+	</style>
+</head>
+<body>
+
+	<img src="../Images/simbo1.jpg" alt="simbo1" id="tr1">
+	<img src="../Images/simbo2.jpg" alt="simbo2" id="tr2">
+	<img src="../Images/simbo3.jpg" alt="simbo3" id="tr3">
+
+	<br><br>
+
+	<div>
+		<img src="../Images/origami.gif" id="tr4">
+	</div>
+
+</body>
+</html>
