@@ -200,15 +200,23 @@ background-size : contain;
 				- translate(이동)
 
 
+[20210115]
+transition : 하나의 스타일에서 다른 스타일로 바뀌는 것, 시간을 조절하는 기능을 더해서 애니메이션 효과를 만들어 낼 수 있음
+transition : property || duration || timing-function
+	property : 애니메이션을 적용할 요소의 속성을 지정
+		ex) none, all, height, ...
+	duration : 트랜지션이 시작해서 끝날 때 까지의 시간을 초단위로 지정
+		ex) 2s
+	timing-function : 속성의 중간값을 계산하는 방법을 정의하는 함수를 명시
+	 - 1) ease : 천천히 시작 후 변환효과를 빨리하고 느리게 끝냄 (default)
+	 - 2) ease-in : 느린 시작
+	 - 3) ease-out : 느린 끝
+	 - 4) ease-in-out : 느린시작, 느린끝
+	 - 5) linear : 시작부터 끝까지 동일한 속도
 
+nav : html5에서 나온거고 웹브라우저에서 바로 메뉴바로 인식하는 것이지 div랑 똑같다
 
-
-
-
-
-
-
-
+<CSS Generator 를 사용해서 CSS 코드를 얻는 방법도 존재함>
 
 
 
@@ -292,13 +300,16 @@ CSS3Ex07.html		원형 그라데이션 효과
 CSS3Ex08.html		background image, 백그라운드 이미지 조절기능들
 CSS3Ex09.html		투명도 속성
 CSS3Ex10.html		img 조절
-
-
-
-
-
-
-
+#w20210115
+CSS3Ex11.html		변형효과 - transition
+CSS3Ex12.html		Pseudo-class(가상 클래스), 
+CSS3Ex13.html		구조적 Pseudo-Class
+CSS3Ex14.html		색상, rgb, rgba, hsl, hsla
+CSS3Ex15.html		polaroid rotate
+navi.html		navi bar, 메뉴 바 동작(위에서 아래로)
+navi2.html		navi bar2, 메뉴 바 동작(옆으로 펼쳐지게)
+poster_view.html	미리보기, 포스터 작은거에 커서 올리면 큰 이미지가 뜨도록 설정
+	
 
 
 
