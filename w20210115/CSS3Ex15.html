@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>다단 처리</title>
+
+	<style type="text/css">
+		div {
+			width: 500px;
+			height: 300px;
+		}
+
+		.rotate {
+			-webkit-transform : rotate(9deg);
+			-moz-transform : rotate(9deg);
+			transform : rotate(9deg);
+		}
+
+		p, li {
+			font-size: 14px;
+		}
+
+		#content { 
+			position: relative;
+			padding: 10px 30px;
+
+			column-count: 3;
+			column-gap: 40px;
+			column-rule: 1px solid black;
+		}
+/*
+	 	다단 표시 : column
+				 : column-count - 단의 갯수
+				 : column-width - 단의 너비
+				 : column-gap   - 단 사이 간격
+				 : column-rule  - 단 사이 구분선
+ */
+
+	</style>
+
+</head>
+<body>
+	<div class="polaroid rotate">
+		<img src="images/2021_logo.jfif">
+		<p class="caption"> 2021년 새해 복 많이 받으세요 </p>
+	</div>
+
+	<li>lilililililililili</li>
+	<li>lilililililililili</li>
+	<li>lilililililililili</li>
+	<li>lilililililililili</li>
+	<li>lilililililililili</li>
+
+</body>
+</html>

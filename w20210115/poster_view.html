@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>미리보기(?)</title>
+	<style type="text/css">
+		.small {width: 120px;}
+
+		#poster {
+			border: 1px solid black;
+			width: 450px;
+			height: 420px;
+			margin: 0 auto;
+
+			background-color: black;
+			box-shadow: black 10px 10px 20px;
+
+			overflow: visible;
+		}
+
+		#poster ul {
+			margin-left: -30px;
+		}
+
+		#poster ul li {
+			list-style-type: none;
+			display: inline-table;
+			padding: 10px;
+		}
+
+		.small:hover {
+			cursor: pointer;
+		}
+
+		.big {
+			width: 320px;
+			visibility: hidden;		/*안보이게 하는 것*/
+			position: absolute;
+			margin-top: 10px;
+			margin-left: -20px;
+
+			border: 1px solid white;
+			box-shadow: 2px 2px 8px #272229;
+
+			transition: all 0.8s ease-in-out;
+			/*opacity: 0;*/
+		}
+
+		#poster ul li:hover .big {
+			visibility: visible;
+			float: right;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="poster">
+		<!-- ul>li*5>img[src="../movie_images/movie_image$.jpg"][class="small"]+img[src="../movie_images/movie_image$.jpg"][class="big"] -->
+		<ul>
+			<li>
+				<img src="../movie_images/movie_image1.jpg" alt="" class="small">
+				<img src="../movie_images/movie_image1.jpg" alt="" class="big">
+			</li>
+			<li>
+				<img src="../movie_images/movie_image2.jpg" alt="" class="small">
+				<img src="../movie_images/movie_image2.jpg" alt="" class="big">
+			</li>
+			<li>
+				<img src="../movie_images/movie_image3.jpg" alt="" class="small">
+				<img src="../movie_images/movie_image3.jpg" alt="" class="big">
+			</li>
+			<li>
+				<img src="../movie_images/movie_image4.jpg" alt="" class="small">
+				<img src="../movie_images/movie_image4.jpg" alt="" class="big">
+			</li>
+			<li>
+				<img src="../movie_images/movie_image5.jpg" alt="" class="small">
+				<img src="../movie_images/movie_image5.jpg" alt="" class="big">
+			</li>
+		</ul>
+
+
+	</div>
+
+</body>
+</html>
