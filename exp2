@@ -1,1 +1,268 @@
+!!note!!
+
+[20210119]
+자바 스크립트는 사용시 헤드가 아닌 바디에 써도 상관은 없음
+자바 스크립트 : 객체 기반으로 하는 스크립트 프로그래밍 언어 => 소스 코드 필요
+함수를 선언하고 <script> 상에서 동작 정의
+<script type="text/javascript">
+		function prtName(){
+						console.log("prtName() 호출");
+
+/*			변수 사용
+			var (variable - undefined)		//자료형 정의X
+			ex) var name;
+				var date;
+				var number;
+*/
+			var name = prompt("이름을 입력하세요");	// 프롬프트 창 띄우기
+
+			// 홍길동
+			console.log(name);
+
+			// 사용자 화면 (웹 브라우저 화면)에 출력
+			document.write("<h2>"+name+ " 님 환영합니다.</h2>");	// 자동으로 새로운 화면 띄우기
+		}
+	</script>
+
+콘솔은 개발자 도구(F12)에 있다.
+    console.log("Hello Javascript World");    콘솔 로그 보기
+    alert("뭘 봐~!");                         알림창 뜨게 하기
+    var name = prompt("이름을 입력하세요");     // 프롬프트 창 띄우기
+    document.write("<h2>"+name+ " 님 환영합니다.</h2>");                     // 사용자 화면 (웹 브라우저 화면)에 출력, 자동으로 새로운 화면을 만들어줌
+    num=parseInt(num);      //숫자로 전환
+    var result = eval(msg);   //eval은 알아서 parsing 해주고 계산도 가능 "1+2"인 문자열을 알아서 계산해서 
+    
+id로 중복되지 않게 객체를 선택하여 텍스트 필드에 사용자가 입력한 데이터를 가져오기
+    var txt = document.getElementById('txt1');
+현재 txt 은 객체 - 객체 안의 내용을 가져오고 싶으면 value를 추출함
+    console.log(txt.value);
+객체 속성값을 변화시킬 수 도 있음
+    txt.value = "어서오세요";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------
+#w20210119
+*javascript             자바 스크립트 설명
+javascriptEx.html       자바 스크립트는 사용시 헤드가 아닌 바디에 써도 상관은 없음
+scriptEx01.html         자바 스크립트 : 객체 기반으로 하는 스크립트 프로그래밍 언어 => 소스 코드 필요
+scriptEx02.html         프롬프트 창 띄워서 이름 적게하고 새 창에서 띄우기
+scriptEx03.html         숫자 입력받고 띄우기
+scriptEx04.html         숫자 2개 입력받고 콘솔에 출력
+scriptEx05.html         숫자를 받아서 문자형을 숫자형으로 바꾼 후 if판단
+scriptEx06.html         구구단 3단 테이블로 출력
+scriptEx07.html         1부터 입력한 숫자까지의 합 출력
+scriptEx08.html         버튼을 누르면 1부터 증가하는 숫자
+scriptEx09.html         문자열과 eval을 자용한 계산결과
+scriptEx10.html         id로 중복되지 않게 객체를 선택하여 텍스트 필드에 사용자가 입력한 데이터를 가져오기
+scriptEx11.html         더하기 기능 페이지, 텍스트 박스, 버튼 
+scriptEx12.html         사칙연산
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
