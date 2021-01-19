@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>scriptEx08</title>
+	버튼을 클릭할 때 마다 콘솔창에 몇번째 클릭중인지 횟수를 출력해보세요
+	출력: ~~ 번째 클릭중입니다.
+	<script type="text/javascript">
+		var num=0;
+		function prtClick(){
+			//console.log("click");
+			num+=1;
+			console.log(num + " 번째 클릭중입니다.")
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="click" onclick="prtClick()" name="">
+</body>
+</html>

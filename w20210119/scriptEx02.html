@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>scriptEx02</title>
+	<script type="text/javascript">
+		
+		function prtName(){
+			console.log("prtName() 호출");
+
+/*			변수 사용
+			var (variable - undefined)		//자료형 정의X
+			ex) var name;
+				var date;
+				var number;
+*/
+			var name = prompt("이름을 입력하세요");	// 프롬프트 창 띄우기
+
+			// 홍길동
+			console.log(name);
+
+			// 사용자 화면 (웹 브라우저 화면)에 출력
+			document.write("<h2>"+name+ " 님 환영합니다.</h2>");	// 자동으로 새로운 화면 띄우기
+
+		}
+
+	</script>
+</head>
+<body>
+	<input type="button" value="이름입력" onclick="prtName()">
+
+</body>
+</html>
