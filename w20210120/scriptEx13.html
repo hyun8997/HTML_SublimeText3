@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>객체</title>
+	<script type="text/javascript">
+		function getInfo() {
+			var txt = document.getElementById("txt");
+
+			console.log(txt);	//마우스로 누르면 밑의 DOM 객체를 보여줌
+			console.dir(txt);	//속성들 볼 수 있음, onfocus 정보 활성화 되어있는 것 볼 수 있다.
+		}
+
+		function getBtnInfo() {
+			var btn = document.getElementById("btn");
+
+			console.log(btn);
+			console.dir(btn);	//onclick: ƒ onclick(event) 로 온클릭 활성화 되어 있음
+			btn.value = "왜 눌러~";
+		}
+
+		function getImgInfo() {
+			var img = document.getElementById("simbo1");
+
+			console.dir(img);
+			
+			img.width=400;
+			img.height=300;
+			img.src = "../Images/origami.gif";	//그림 바꾸는거 가능하네
+		}
+	</script>
+<!-- 
+	<style type="text/css">
+		img {
+			width: 400px; 
+			height: 300px;
+		}
+	</style>
+ -->
+</head>
+<body>
+	<h2>자바스크립트 : 객체 기반 스크립트 언어</h2>
+	<h3>객체 : property(속성) + 함수</h3>
+	<input type="text" name="" id="txt" onfocus="getInfo()">
+	<input type="button" value="객체 정보 얻어오기" id="btn" onclick="getBtnInfo()">
+	<!--이미지 크기를 400, 300으로 수정해보세요-->
+	<img src="../Images/simbo1.jpg" alt="설거지 심보" id="simbo1" onclick="getImgInfo()">
+</body>
+</html>

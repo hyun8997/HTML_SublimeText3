@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>dom</title>
+	<script type="text/javascript">
+		function prt() {
+			var msg = "";
+			msg += "<ul>";
+			msg += "<li>Hello</li>";
+			msg += "<li>JavaScript</li>";
+			msg += "<li>World</li>";
+			msg += "</ul>";
+
+			//document.write(msg);
+
+			//console.dir(document.body);
+
+			//document.body.innerHTML = msg;	//본래 버튼이 사라지는 문제
+
+			var txt = document.getElementById("txt");	//div를 만들어서 그 부분만 바뀌도록, 버튼은 남김
+			//console.dir(txt);
+			txt.innerHTML = msg;
+
+			//document.body.textContent = msg;		//태그가 인식되지 않고 쭉~텍스트로 써짐
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="click" onclick="prt()">
+	<div id="txt">
+		<h1>wow</h1>
+	</div>
+</body>
+</html>

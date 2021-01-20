@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>데이터 객체(오브젝트)와 함수들</title>
+	<script type="text/javascript">
+
+		// 날짜 : Date
+		var now =  new Date();
+
+		var day = now.getDay();
+		var date = now.getDate();
+		var month = now.getMonth() + 1;
+		var year = now.getYear();
+
+		console.log(day+" "+date+" "+month+" "+year);
+
+		// 숫자 : Number
+		var num1 = 217;				//숫자
+		var num2 = new Number(217);	//넘버 object 객체에 primitive value로 217이 들어있다.
+
+		console.log(typeof(num1));
+		console.log(typeof(num2));
+
+		console.dir(num2);
+
+		console.log("-----------------------------");
+		var num3 = new Number(217.334352342);	//new 하고 불러오면 생성자처럼 사용 가능
+
+		console.log(num3.toFixed(1));
+		console.log(num3.toFixed(4));		//반올림 기능
+
+		var num4 = 3.124143253524;
+
+		console.log(num4.toFixed(3));
+
+
+		console.dir(Number.MAX_VALUE);		//new 안하고 불러오면 static과 같은 용도
+
+		console.log("-----------------------------");
+
+		// 수학 : Math
+		console.log(Math);
+
+		console.log("원주율 : " + Math.PI);
+		console.log("절대값 : " + Math.abs(-9));
+		console.log("제곱근 : " + Math.sqrt(4));
+		console.log("소숫점 절삭 : " + Math.floor(3.14));
+		console.log("랜덤값(0~1의 실수) : " + Math.random());
+		
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

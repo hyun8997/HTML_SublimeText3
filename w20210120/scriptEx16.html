@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>dom</title>
+	<script type="text/javascript">
+		function prtTxt() {
+			var txt = document.getElementById("txt");
+
+			var out = document.getElementById("out");
+
+			out.innerHTML = txt.value;
+		}
+	</script>
+</head>
+<body>
+<!-- 	
+	버튼을 클릭하면 textfield에 있는 글자를 추출하여 브라우저 화면에 출력 <br>
+	단. 버튼 및 textfiled가 모두 유지되어야 함. <br>
+ -->
+	<div id="in">
+		<input type="text" name="" id="txt">
+		<input type="button" value="출력" id="btn" onclick="prtTxt()">
+	</div>
+	<div id="out">
+		
+	</div>
+</body>
+</html>

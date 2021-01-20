@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>core</title>
+	<script type="text/javascript">
+		// 문자열 : String
+
+		/*
+		cf) 자바
+		String str = new String("ABCDE");
+		String str2 = "ABCDE";
+		*/
+
+		var str1 = new String("Hello Javascript World");	//object
+
+		var str2 = "Hello Javascript World";				//string
+
+		console.log(typeof(str1));
+		console.log(typeof(str2));
+
+		console.dir(str1);
+		console.dir(str2);		//directory를 불러도 데이터만 나옴, 객체 아니라서
+
+		console.dir(str2.length);	//객체로 선언해서 사용하는 것처럼 속성(함수?) 가져다 쓸 수 있음
+
+		console.log("-----------------------");
+
+		var check = prompt("아이디 입력해주세요", "8글자 이상");	//prompt로 받으면 문자열과 똑같이 사용 가능함
+		//console.log(check);
+		if(check.length < 8){
+			alert("8글자가 아닙니다.");
+		}else {
+			alert("감사합니다.");
+		}
+		
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
