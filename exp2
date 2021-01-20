@@ -39,8 +39,53 @@ id로 중복되지 않게 객체를 선택하여 텍스트 필드에 사용자�
 객체 속성값을 변화시킬 수 도 있음
     txt.value = "어서오세요";
 
+[20210120]
+자바스크립트 : 객체 기반 스크립트 언어, 객체는 속성과 함수로 이루어져있다.
+객체 : property(속성) + 함수
+var msg = document.getElementsByTagName('h1'); 로 받으면 배열로 받아짐, 각각의 객체를 배열로 받음
+style: CSSStyleDeclaration : CSS 스타일로 쓰라고 되어있음. => 간단한 CSS 효과를 javascript로 넣을 수 있는 
+innerHTML : html로 쓰게 해주는 속성
 
+		// cf) 자바 배열 선언 : int[] a = new int[x];
 
+		// 자바 스크립트 배열
+		var a = new Array(3);	//배열 선언과 동시에 크기 선언
+		var a1 = new Array();	//배열 선언하고 크기 미지정
+		var a2 = new Array(45, 12, 2, 4, 44, 24);	//배열에 값을 넣어서 선언
+		var a3 = [23, 34, 6, 2, 17,33];			//배열에 값을 넣어서 선언
+		console.log(a);		//배열 내용물 볼수있음
+		console.log(a1);
+		console.log(a2);
+		console.log(a3);
+		
+		console.log(a.reverse());	//배열을 뒤집는 함수
+		
+		var b = new Array(2);	// a 배열에서 0번째, 1번째 값을 b 배열에 담아보세요
+		b = a.slice(0,2);	// slice(n1, n2) : n1부터 n2 전까지 분리
+
+데이터 객체(오브젝트)와 함수들, 날짜(Date()), 숫자(Number())-정수,실수가능, 수학(
+
+		var now =  new Date();
+
+		var day = now.getDay();
+		var date = now.getDate();
+		var month = now.getMonth() + 1;
+		var year = now.getYear();
+
+		// 숫자
+		var num1 = 217;				//숫자
+		var num2 = new Number(217);	//넘버 object 객체에 primitive value로 217이 들어있다.
+
+		console.log(typeof(num1));
+		console.log(typeof(num2));
+
+		console.dir(num2);
+
+		console.log("-----------------------------");
+		var num3 = new Number(217.334352342);
+
+		console.log(num3.toFixed(1));
+		console.log(num3.toFixed(4));		//반올림 기능
 
 
 
@@ -148,15 +193,15 @@ scriptEx09.html         문자열과 eval을 자용한 계산결과
 scriptEx10.html         id로 중복되지 않게 객체를 선택하여 텍스트 필드에 사용자가 입력한 데이터를 가져오기
 scriptEx11.html         더하기 기능 페이지, 텍스트 박스, 버튼 
 scriptEx12.html         사칙연산
-
-
-
-
-
-
-
-
-
+#w20210120
+scriptEx13.html         객체, 객체는 속성과 함수로 이루어져있다.
+scriptEx14.html         dom 객체 document를 이용
+scriptEx15.html         dom, var msg = document.getElementsByTagName('h1'); 로 받으면 배열로 받아짐, 각각의 객체를 배열로 받음
+			style: CSSStyleDeclaration : CSS 스타일로 쓰라고 되어있음.
+scriptEx16.html         텍스트 필드 내 정보 버튼 누르면 브라우저 화면에 출력 되도록, 텍스트 필드와 버튼 유지
+scriptEx17.html         core, 배열(Array) 선언 및 사용법, slice(n1, n2) : n1부터 n2 전까지 분리
+scriptEx18.html         데이터 객체(오브젝트)와 함수들, 날짜(Date), 숫자(Number)-정수,실수가능, 수학(Math)
+scriptEx19.html         문자열(String), prompt는 문자열과 똑같이 사용가능, 
 
 
 
