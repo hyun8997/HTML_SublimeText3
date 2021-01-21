@@ -87,7 +87,7 @@ innerHTML : html로 쓰게 해주는 속성
 		console.log(num3.toFixed(1));
 		console.log(num3.toFixed(4));		//반올림 기능
 
-
+[20210121]
 
 
 
@@ -201,8 +201,8 @@ scriptEx15.html         dom, var msg = document.getElementsByTagName('h1'); 로 
 scriptEx16.html         텍스트 필드 내 정보 버튼 누르면 브라우저 화면에 출력 되도록, 텍스트 필드와 버튼 유지
 scriptEx17.html         core, 배열(Array) 선언 및 사용법, slice(n1, n2) : n1부터 n2 전까지 분리
 scriptEx18.html         데이터 객체(오브젝트)와 함수들, 날짜(Date), 숫자(Number)-정수,실수가능, 수학(Math)
-scriptEx19.html         문자열(String), prompt는 문자열과 똑같이 사용가능, 
-
+scriptEx19.html         문자열(String), prompt는 문자열과 똑같이 사용가능, 문자열 함수들
+#w20210121
 
 
 
