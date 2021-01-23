@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>window</title>
+	<script type="text/javascript">
+		
+		window.onload = function(){
+		var time = document.getElementById("clock");
+
+		// 1초 마다 반복
+
+		window.setInterval(function()){
+		time.innerHTML = new Date().toString();,1000;
+	}
+
+
+
+	</script>
+</head>
+<body>
+
+	<h1>오늘은</h1>
+
+	<h1>목요일</h1>
+
+
+	<div id="clock">
+
+	</div>
+
+
+
+</body>
+</html>

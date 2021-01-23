@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript">
+		//문자열 : String 
+
+		//cf) 자바 	
+		// String str = new String("ABCDEF");
+		// String str2 = "ABCDEF";
+
+
+
+		var str1 = new String("Hellp Javascript World");
+
+		var str2 =  "hello Javascript World";
+
+
+
+
+		console.log(typeof(str1));
+		console.log(typeof(str2));
+
+		console.dir(str1);
+		console.dir(str2);
+
+		console.dir(str2.length);
+
+		console.log("--------------------------------------------------------------------------------")
+
+		// var check = prompt("아이디입력해주세요, 8글자 이상"); 
+		// //console.log(check);
+		// if(check.length <8 ) {
+		// 	alert("8글자 아니다.");
+		// } else {
+		// 	alert("thk :) ");
+		// }
+
+		var prt = "";
+
+		prt += "anchor :" + str2.anchor("Javascript") + "<br>"; 
+		prt += "big : " + str2.big() + "<br>";
+		// prt += "blink" + str2.blink() + "<br>";      //이제 지원 안됨	//깜빡이는 기능 
+		prt += "bold" + str2.bold() + "<br>";
+		prt += "fixed" +str2.fixed() + "<br>";			// 타자기 서체 
+		prt += "italics" +str2.italics() + "<br>";
+		prt += "fontcolor" +str2.fontcolor() + "<br>";
+		prt += "fontsize" +str2.fontsize(30) + "<br>";
+		prt += "small" +str2.small() + "<br>";
+		prt += "sub" +str2.sub() + "<br>";
+
+		document.write(prt);
+		console.log("--------------------------------------------------------------------------------")
+
+		var msg = "Hello Javascript World";
+
+		// txt = msg.toLowerCase();
+		// txt = msg.anchor('wow');
+
+		//메소드 체이닝 방식 
+		txt = msg.toLowerCase().anchor('wow');
+		//소문자로 바꾸고 앵커 테그 
+
+
+
+		// alert(txt);
+		// 메시지창? 
+
+		console.log("--------------------------------------------------------------------------------")
+
+		var str3 = "ABCDEF";
+
+		//두번째 글자부터 3자 자르기 
+		console.log(str3.substr(2,3));			//배열로 인식하고 있어서 0번부터 시작함에 유의 
+
+		// A라는 글자의 위치
+
+		console.log(str3.indexOf('A'));
+
+		//자바스크립트도 함수 중첩 가능함
+		// 아이디만 추출해보세요 
+
+		var email = "asdsdasdas@naver.com";
+
+		var positon = email.indexOf('@');
+
+
+		console.log(email.substr(0,positon));
+
+
+		console.log("--------------------------------------------------------------------------------")
+
+		var str4 = "aaa, bbb, ccc, ddd, eee, fff";
+
+		var list = str4.split(", ")
+
+		console.log(list);
+
+		for (var i= 0; i<list.length; i++) {
+			console.log(list[i]);
+		}
+
+
+
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html

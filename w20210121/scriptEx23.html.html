@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>location</title>
+	<script type="text/javascript">
+		
+
+		console.dir(location);
+
+		function goNaver(){
+
+			// location.href="https://www.naver.com";
+
+			// location.replace("https://www.naver.com");
+
+
+			// href: 속성에 새로운 값을 대입해서 새로운 페이지로 이동
+			// replace(): 함수를 사용해서 기존 페이지를 새로운 페이지로 대체 (변경)
+			// 	 (특징 - 뒤로가기 페이지 버튼이 비활성화)
+			// 	 (페이지 정보는 history에 기록되어 있음 - replace()를 사용하면 history에 기록하지 않음)
+
+
+
+		}
+
+			function goGoogle() {
+				
+				location.assign("https://www.google.co.kr");
+
+				// 새창으로 google페이지 이동시켜 보세요 
+				window.open 
+
+			}
+
+		
+
+
+
+	</script>
+</head>
+<body>
+	<a href= "http://www.naver.com" target="_black"> 네이버</a>
+
+	<input type="button" value="네이버" onclick="goNaver()">
+
+		<input type="button" value="구글" onclick="goGoogle()">
+</body>
+</html>

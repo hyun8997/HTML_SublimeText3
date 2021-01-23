@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript">
+		//alert("뭘 봐!!");
+
+		//window.open(url, name, option, replace);
+
+		var msg = window.open("", "new","width=400", "height=300", true)
+
+		if(msg) {
+			msg.document.write("<h2>새 팝업창입니다. </h2>");
+
+		}else {
+			alert("팝업 차단을 해지해주세요 ")
+		}
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
