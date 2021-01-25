@@ -204,15 +204,19 @@ scriptEx18.html         데이터 객체(오브젝트)와 함수들, 날짜(Date
 scriptEx19.html         문자열(String), prompt는 문자열과 똑같이 사용가능, 문자열 함수들
 #w20210121
 
+#w20210122
 
+#w20210125
 
-
-
-
-
-
-
-
+canvasEx05.html		그라데이션 - 선, error가 있음
+canvasEx06.html		그라데이션 - 원
+canvasEx07.html		선 스타일
+canvasEx08.html		상태 저장, 복원
+1.html			게임만들기_1
+2.html			a캐릭터 추가
+3.html			bgm 추가
+4.html			background 이미지 밑으로 쭉 내려가도록 추가
+5.html			gunshot 추가, 비명 추가
 
 
 
